@@ -26,6 +26,9 @@ const Userlist = () => {
                 </TouchableOpacity>
             </View>
             <FlatList data={ User}
+            //  data={data.filter(item => {
+            //     return item.title.toLowerCase().includes(search.toLowerCase());
+            //   })}
 
                 renderItem={({ item, index }) =>
                     <View   style={{ ...styles.box, width: Dimension.width - 20, padding: 5, marginBottom: 20 }}>
