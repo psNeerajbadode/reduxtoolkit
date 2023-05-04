@@ -25,7 +25,7 @@ const Userlist = () => {
                     <Text style={{ color: '#fff', paddingVertical: 8, paddingHorizontal: 20 }}>Add</Text>
                 </TouchableOpacity>
             </View>
-            <FlatList data={ User}
+            <FlatList data={ User} keyExtractor={(item)=>item.id}
             //  data={data.filter(item => {
             //     return item.title.toLowerCase().includes(search.toLowerCase());
             //   })}

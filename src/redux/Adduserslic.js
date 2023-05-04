@@ -19,7 +19,7 @@ const AddUsers = createSlice({
            
             const {id,first,last,mobile,address} = action.payload;
             const Uuser = state.find(user=>user.id==id);
-            console.log(Uuser);
+            // console.log(Uuser);
             if(Uuser){
                 Uuser.first = first;
                 Uuser.last = last;
